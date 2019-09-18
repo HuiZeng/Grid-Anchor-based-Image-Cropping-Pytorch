@@ -1,2 +1,2 @@
 # Grid-Anchor-based-Image-Cropping-Pytorch
-Pytorch implementation of "Grid anchor based image cropping"
+This code includes the extensions have made in our journal version. Please read the [paper](https://drive.google.com/open?id=1Bd1VaqYVycB7Npv5OdXKl-znKs_APl4n) for details.
