@@ -12,3 +12,6 @@ python 2.7, pytorch 0.4.2, numpy, cv2, scipy.
 
 To change the aspect ratio of generated crops, please change the ``generate_bboxes`` function in ``croppingDataset.py`` (line 115).
 
+
+### Other implementation
+1. [Python3.5 + PyTorch 1.0 or later](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch)
