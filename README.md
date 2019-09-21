@@ -15,3 +15,4 @@ To change the aspect ratio of generated crops, please change the ``generate_bbox
 
 ### Other implementation
 1. [Python3.5 + PyTorch 1.0 or later](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch)
+2. [Matlab (conference version)](https://github.com/HuiZeng/Grid-Anchor-based-Image-Cropping)
