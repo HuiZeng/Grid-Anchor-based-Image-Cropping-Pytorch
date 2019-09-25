@@ -16,5 +16,5 @@ python 2.7, pytorch 0.4.1, numpy, cv2, scipy.
 The executable annotation software can be found [here](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch).
 
 ### Other implementation
-1. [Python3.5 + PyTorch 1.0 or later](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch)
+1. [PyTorch 1.0 or later](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch)
 2. [Matlab (conference version)](https://github.com/HuiZeng/Grid-Anchor-based-Image-Cropping)
