@@ -10,7 +10,7 @@ python 2.7, pytorch 0.4.2, numpy, cv2, scipy.
 
 2. Run ``TrainModel.py`` to train a new model on our dataset or Run ``demo_eval.py`` to test the pretrained model on any images.
 
-To change the aspect ratio of generated crops, please change the ``generate_bboxes`` function in ``croppingDataset.py`` (line 115).
+3. To change the aspect ratio of generated crops, please change the ``generate_bboxes`` function in ``croppingDataset.py`` (line 115).
 
 ### Annotation software
 The executable annotation software can be found [here](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch).
