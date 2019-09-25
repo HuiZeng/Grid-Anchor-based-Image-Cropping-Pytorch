@@ -3,7 +3,7 @@ This code includes several extensions we have made to our conference version. Pl
 
 
 ### Requirements
-python 2.7, pytorch 0.4.2, numpy, cv2, scipy. 
+python 2.7, pytorch 0.4.1, numpy, cv2, scipy. 
 
 ### Usage
 1. Download the source code, the [dataset](https://drive.google.com/open?id=1X9xK5O9cx4_MvDkWAs5wVuM-mPWINaqa) and the [pretrained model](https://drive.google.com/open?id=1kaNWvfIdtbh2GIPNSWXdxqyS-d2DR1F3).
