@@ -56,6 +56,8 @@ data_loader_test = data.DataLoader(GAICD(image_size=args.image_size, dataset_dir
 
 net = build_crop_model(scale=args.scale, alignsize=args.align_size, reddim=args.reduced_dim, loadweight=True, model=args.base_model, downsample=args.downsample)
 
+# fix the batch normalization in mobilenet and shufflenet because batchsize = 1
+net.eval()
 
 if cuda:
     net = torch.nn.DataParallel(net,device_ids=[0])
@@ -67,7 +69,6 @@ if cuda:
 optimizer = optim.Adam(net.parameters(), lr=args.lr)
 
 def test():
-    net.eval()
     acc4_5 = []
     acc4_10 = []
     wacc4_5 = []
@@ -160,7 +161,6 @@ def test():
 
 def train():
 
-    net.train()
     for epoch in range(0, 80):
         total_loss = 0
         for id, sample in enumerate(data_loader_train):
