@@ -114,17 +114,17 @@ class shufflenetv2_base(nn.Module):
 
 
 def fc_layers(reddim = 32, alignsize = 8):
-    conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=alignsize, padding=0),nn.BatchNorm2d(768),nn.ReLU(inplace=True))
-    #conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=3, padding=1, stride=2),nn.BatchNorm2d(768),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.BatchNorm2d(reddim),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(reddim, 768, kernel_size=3, padding=1,stride=2),nn.BatchNorm2d(768),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.BatchNorm2d(reddim),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(reddim, 768, kernel_size=3, padding=0,stride=1),nn.BatchNorm2d(768),nn.ReLU(inplace=True))
-    #conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=5, padding=2, stride=2),nn.BatchNorm2d(768),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.BatchNorm2d(reddim),nn.ReLU(inplace=True),
-    #                      nn.Conv2d(reddim, 768, kernel_size=5, padding=0,stride=1),nn.BatchNorm2d(768),nn.ReLU(inplace=True))
-    conv2 = nn.Sequential(nn.Conv2d(768, 128, kernel_size=1),nn.BatchNorm2d(128),nn.ReLU(inplace=True))
-    dropout = nn.Dropout(p=0.5)
+    conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=alignsize, padding=0),nn.ReLU(inplace=True))
+    #conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=3, padding=1, stride=2),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(reddim, 768, kernel_size=3, padding=1,stride=2),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(reddim, 768, kernel_size=3, padding=0,stride=1),nn.ReLU(inplace=True))
+    #conv1 = nn.Sequential(nn.Conv2d(reddim, 768, kernel_size=5, padding=2, stride=2),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(768, reddim, kernel_size=1, padding=0),nn.ReLU(inplace=True),
+    #                      nn.Conv2d(reddim, 768, kernel_size=5, padding=0,stride=1),nn.ReLU(inplace=True))
+    conv2 = nn.Sequential(nn.Conv2d(768, 128, kernel_size=1),nn.ReLU(inplace=True))
+    #dropout = nn.Dropout(p=0.5)
     conv3 = nn.Conv2d(128, 1, kernel_size=1)
     layers = nn.Sequential(conv1, conv2, dropout, conv3)
     return layers
