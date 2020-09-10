@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+dataset.zip
+dataset/
+pretrained_model/
+pretrained_model.zip

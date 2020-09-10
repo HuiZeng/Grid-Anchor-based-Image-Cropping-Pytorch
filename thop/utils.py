@@ -1,4 +1,3 @@
-
 def clever_format(num, format="%.2f"):
     if num > 1e12:
         return format % (num / 1e12) + "T"
