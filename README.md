@@ -6,10 +6,10 @@ The extension of this work has been accepted by TPAMI. Please read the [paper](h
 python 2.7, pytorch 0.4.1, numpy, cv2, scipy. 
 
 ### Usage
-# conference version
+#### conference version
 1. Download the source code, the [dataset](https://drive.google.com/open?id=1X9xK5O9cx4_MvDkWAs5wVuM-mPWINaqa) and the [pretrained model](https://drive.google.com/open?id=1kaNWvfIdtbh2GIPNSWXdxqyS-d2DR1F3). 
 
-# journal version
+#### journal version
 [dataset](https://drive.google.com/file/d/1tDdQqDe8dMoMIVi9Z0WWI5vtRViy01nR/view?usp=sharing) [pretrained model](https://drive.google.com/file/d/1KWYQdL6R5hmOC9toTymbMORZDThpiEW4/view?usp=sharing)
 
 2. Run ``TrainModel.py`` to train a new model on our dataset or Run ``demo_eval.py`` to test the pretrained model on any images.
