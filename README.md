@@ -19,3 +19,24 @@ The executable annotation software can be found [here](https://github.com/lld533
 ### Other implementation
 1. [PyTorch 1.0 or later](https://github.com/lld533/Grid-Anchor-based-Image-Cropping-Pytorch)
 2. [Matlab (conference version)](https://github.com/HuiZeng/Grid-Anchor-based-Image-Cropping)
+
+
+### Citation
+```
+@inproceedings{zhang2019deep,
+  title={Reliable and Efficient Image Cropping: A Grid Anchor based Approach},
+  author={Zeng, Hui, Li, Lida， Cao, Zisheng and Zhang, Lei},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2019}
+}
+@article{zeng2020cropping,
+  title={Grid Anchor based Image Cropping: A New Benchmark and An Efficient Model},
+  author={Zeng, Hui and Li, Lida and Cao, Zisheng and Zhang, Lei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={},
+  number={},
+  pages={},
+  year={2020},
+  publisher={IEEE}
+}
+```
